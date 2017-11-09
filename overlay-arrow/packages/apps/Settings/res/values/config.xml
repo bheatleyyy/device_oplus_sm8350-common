@@ -11,4 +11,6 @@
     <!-- Dolby Atmos -->
     <string name="config_dolbyAtmosPackage" translatable="false">com.dolby.daxappui/com.dolby.daxappui.MainActivity</string>
 
+    <!-- Device specific doze package -->
+    <string name="config_customDozePackage">org.lineageos.settings.doze/org.lineageos.settings.doze.DozeSettingsActivity</string>
 </resources>
