@@ -238,14 +238,6 @@ vendor/firmware/evass.b19
 vendor/firmware/evass.mbn
 vendor/firmware/evass.mdt
 
-# Diag
-system_ext/lib/vendor.qti.diaghal@1.0.so
-system_ext/lib64/vendor.qti.diaghal@1.0.so
-vendor/bin/diag-router
-vendor/etc/init/vendor.qti.diag.rc
-vendor/lib/vendor.qti.diaghal@1.0.so
-vendor/lib64/vendor.qti.diaghal@1.0.so
-
 # Display (CWB)
 odm/lib64/vendor.oplus.hardware.cwb@1.0.so
 vendor/lib64/libcwb_sm8350.so
@@ -834,6 +826,7 @@ system_ext/etc/permissions/qti_libpermissions.xml
 system_ext/etc/permissions/qti_permissions.xml
 system_ext/framework/qcrilhook.jar
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+system_ext/lib64/vendor.qti.diaghal@1.0.so
 vendor/app/IWlanService/IWlanService.apk
 vendor/bin/hw/qcrilNrd
 vendor/bin/ATFWD-daemon
