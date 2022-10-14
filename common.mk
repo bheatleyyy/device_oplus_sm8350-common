@@ -291,7 +291,6 @@ PRODUCT_PACKAGES += \
 # NFC
 ifneq ($(TARGET_NFC_CHIPSET),none)
 PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.2.vendor \
     com.android.nfc_extras \
     Tag
 ifeq ($(TARGET_NFC_CHIPSET),snxxx)
@@ -368,6 +367,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor \
     libprotobuf-cpp-full \
     librmnetctl
 
