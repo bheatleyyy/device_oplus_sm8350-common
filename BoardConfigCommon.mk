@@ -82,7 +82,6 @@ DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 ifeq ($(TARGET_NFC_CHIPSET),snxxx)
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest_snxxx.xml
 endif
-ODM_MANIFEST_FILES := $(COMMON_PATH)/manifest_odm.xml
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_oplus
