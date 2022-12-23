@@ -76,8 +76,7 @@ TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(COMMON_PATH)/device_framework_matrix.xml \
-    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-    vendor/aosp/config/device_framework_matrix.xml
+    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 ifeq ($(TARGET_NFC_CHIPSET),snxxx)
@@ -137,7 +136,7 @@ BOARD_DTBOIMG_PARTITION_SIZE := 25165824
 BOARD_SUPER_PARTITION_SIZE ?= 10200547328
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 237598617600
 BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := $(BOARD_BOOTIMAGE_PARTITION_SIZE)
-ifneq ($(WITH_GMS),true)
+ifneq ($(ARROW_GAPPS),true)
 BOARD_PRODUCTIMAGE_EXTFS_INODE_COUNT := -1
 BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 958769746
 BOARD_SYSTEMIMAGE_EXTFS_INODE_COUNT := -1

@@ -257,10 +257,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
 
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.1-service.oplus
-
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_lahaina/video_system_specs.json \
@@ -332,8 +328,8 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
 
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-aosp \
-    $(LOCAL_PATH)/overlay-aosp_oneplus
+    $(LOCAL_PATH)/overlay-arrow \
+    $(LOCAL_PATH)/overlay-arrow_oneplus
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
